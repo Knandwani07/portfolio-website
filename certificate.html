@@ -493,12 +493,45 @@
     /* Responsive */
     @media (max-width: 900px) {
       .cert-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
       }
 
       .cert-grid.single-row {
+        grid-template-columns: 1fr;
         max-width: 100%;
+      }
+
+      .cert-item {
+        padding: 25px 15px;
+      }
+
+      .cert-media {
+        margin-bottom: 15px;
+      }
+
+      .cert-text h2 {
+        font-size: 1.1rem;
+      }
+
+      .cert-text > p {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+      }
+
+      .cert-points {
+        margin-bottom: 20px;
+      }
+
+      .cert-points li {
+        font-size: 0.8rem;
+        padding: 6px 0 6px 18px;
+        margin-bottom: 6px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
       }
     }
 
